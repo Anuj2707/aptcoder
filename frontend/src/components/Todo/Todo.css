@@ -1,0 +1,126 @@
+.todo {
+    width: 100%;
+    min-height: 100vh;
+    max-height: fit-content;
+    position: relative;
+}
+
+.todo-main {
+    box-shadow: #325d3b40 10px 0px 20px -5px, #4858324d 0px 8px 16px -8px;
+    width: 40%;
+    margin-top: 6rem;
+    border-radius: 0.5em;
+    min-width: 400px;
+}
+
+.todo-inputs {
+    width: 100%;
+    padding: 5px 10px;
+    border-right: 1px solid #036e0e;
+    margin: 1rem;
+}
+
+#body-input {
+    display: none;
+}
+
+[type="text"] {
+    text-transform: capitalize;
+    outline: none;
+    width: 100%;
+}
+
+#add-btn {
+    margin-left: 0.15rem;
+    margin-right: 0.35rem;
+    padding: 3px 20px;
+    color: #ffff;
+}
+
+/* Cards */
+
+.card-wrapper {
+    border: 1px solid black;
+    min-height: 175px;
+}
+
+.task-desciption {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.update {
+    font-size: 28px;
+    color: #0e23a8;
+    padding: 5px;
+    border-radius: 15%;
+}
+
+.delete {
+    color: #f46969;
+    font-size: 31px;
+    padding: 5px;
+    border-radius: 15%;
+}
+
+.delete:hover {
+    box-shadow: #f3b3b3 10px 0px 16px -5px, #f3caca 0px 8px 12px -8px;
+}
+
+.update:hover {
+    box-shadow: #7687f4 10px 0px 16px -5px, #8493f4 0px 8px 12px -8px;
+}
+
+.card-wrapper:hover {
+    box-shadow: #325d3b40 10px 0px 20px -5px, #68a90e4d 0px 8px 16px -8px;
+}
+
+
+
+
+/* UPDATE */
+
+.todo-update {
+    position: absolute;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.update-wrapper {
+    background-color: #f1debb;
+    height: 60%;
+    min-height: 450px;
+    width: 50%;
+    color: #033a5c;
+    border-radius: 0.5rem;
+    border-bottom: 5px solid#033a5c;
+    border-top: 5px solid#033a5c;
+}
+
+[maxlength="50"] {
+    max-height: 120px;
+}
+
+@media screen and (max-width: 450px) {
+    .todo-main {
+        min-width: 300px;
+        flex-direction: column;
+    }
+
+    .todo-inputs {
+        border: none;
+    }
+
+    #add-btn {
+        margin-bottom: 10px;
+    }
+
+    
+}

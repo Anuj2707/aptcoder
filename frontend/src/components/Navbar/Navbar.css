@@ -1,0 +1,17 @@
+.user-png{
+    height: 45px;
+    width: 45px;
+}
+
+.list-items{
+    width: 90px;
+    padding: 3px 0;
+    font-weight: 500;
+}
+
+.btn-success a{
+    color: #ffff!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

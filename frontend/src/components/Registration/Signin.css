@@ -1,0 +1,24 @@
+.signin {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+}
+
+.custom-form-style {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.custom-form-style input{
+    font-size: 18px;
+    line-height: 2.2rem;
+}
